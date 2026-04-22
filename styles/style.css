@@ -1,5 +1,107 @@
-html {
-    height: 100%;
+:root {
+  --primary: #1D1D1F;    /* Deep Black: El color de los textos y fondos oscuros de Apple */
+  --secondary: #0066CC;  /* System Blue: El azul clásico de los enlaces y botones de iOS/macOS */
+  --bg-light: #F5F5F7;   /* Off-White/Silver: El gris claro característico de sus secciones */
+  --text-main: #1D1D1F;  /* Onyx: Para una legibilidad máxima y sobria */
+  --accent: #86868B;     /* Silver/Grey: Para detalles secundarios, iconos y bordes finos */
+}
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-size: 16px;
+      background-color: var(--bg-light);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+  .titulo {
+    text-align: center;
+    font-size: 3.8rem;
+  }
+
+
+
+.nav-bg {
+  background-color: var(--primary);
+}
+  
+  .img-header {
     width: 100%;
   }
-  
+
+
+
+  .contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  .navegacion-principal {
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 0;
+
+
+
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+      flex-direction: row;
+          justify-content: space-evenly;
+
+    }
+}
+
+  .navegacion-principal a {
+
+    color: var(--bg-light);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+ .navegacion-principal a:hover {
+    background-color: var(--accent);
+    color: var(--text-main);
+ }
+
+ .hero {
+  background-image: url(../Pic/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 450px;
+
+  position: relative;
+ }
+
+ .contenido-hero {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
