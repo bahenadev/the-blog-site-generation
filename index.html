@@ -1,177 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preload" href="./styles/normalize.css" as="style" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="preload" href="./styles/style.css" as="style" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>The Blog Site</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-    <link rel="preload" href="./styles/normalize.css" as="style">
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="preload" href="./styles/style.css" as="style">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>The Blog Site</title>
-</head>
+  <body>
+    <header>
+      <h1 class="titulo">The Blog Site</h1>
+    </header>
 
-<body>
-
-  <header>
-<h1 class="titulo">The Blog Site</h1>
-
-  </header>
-
-<div class="nav-bg">
- <nav class="navegacion-principal contenedor">
-    <a href="#">Inicio</a>
-    <a href="nosotros.html">Quiénes somos</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
-</div>
-
- 
-
-
-
-  <section class="hero">
-    <div class="contenido-hero">
-
-<h2>Blog de Desarrollo Web</h2>
-<p><!--
-tags: [media, blogging, internet, social, site]
-category: Brand
-unicode: "f35a"
-version: "1.89"
--->
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="44"
-  height="44"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="#0066CC"
-  stroke-width="1.5"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M8 21h8a5 5 0 0 0 5 -5v-3a3 3 0 0 0 -3 -3h-1v-2a5 5 0 0 0 -5 -5h-4a5 5 0 0 0 -5 5v8a5 5 0 0 0 5 5z" />
-  <path d="M7 7m0 1.5a1.5 1.5 0 0 1 1.5 -1.5h3a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1 -1.5 1.5h-3a1.5 1.5 0 0 1 -1.5 -1.5z" />
-  <path d="M7 14m0 1.5a1.5 1.5 0 0 1 1.5 -1.5h7a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1 -1.5 1.5h-7a1.5 1.5 0 0 1 -1.5 -1.5z" />
-</svg>
-
-</p>
-  <p>Toluca, Méx.</p>
-  <a href="#">Contactar</a>
+    <div class="nav-bg">
+      <nav class="navegacion-principal contenedor">
+        <a href="#">Inicio</a>
+        <a href="nosotros.html">Quiénes somos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
     </div>
 
+    <section class="hero">
+      <div class="contenido-hero">
+        <h2>Blog de Desarrollo Web</h2>
 
-  </section>
-  <main>
-    <h2>Contenido del blog</h2>
+        <h3>El mejor blog para desarrolladores</h3>
 
-    <section>
-        <h3>Ruta Dev 2026</h3>
-
-        <img src="Pic/ruta.jpg" alt="imagen de ruta de aprendizaje">
-
-  <p>Aquí te decimos qué aprender primero este año para que no pierdas el tiempo. Es la guía perfecta para pasar de no saber nada a crear tus propios programas.</p>
+        <a href="#" class="boton">Contactar</a>
+      </div>
     </section>
+    <main class="contenedor">
+      <h2>Contenido del blog</h2>
 
-    <section>
-      <h3>Java Sin Miedo</h3>
+      <div class="servicios">
+        <section>
+          
+          <div class="articulo-img">
+<img src="./Pic/ruta.jpg" alt="">
+          </div>
 
-      <img src="Pic/java.jpg" alt="imagen de java">
 
-  <p>Mucha gente dice que Java es difícil, pero aquí te enseñamos que es muy ordenado. Aprenderás las bases para crear sistemas fuertes que usan las grandes empresas.</p>
-    </section>
-
-    <section>
-        <h3>HTML Dinámico</h3>
-
-        <img src="Pic/html.jpg" alt="imagen de html">
-
-  <p>Aprende a crear el esqueleto de cualquier sitio web de forma sencilla y correcta. Es el primer paso para que tus ideas cobren vida en el navegador.</p>
-
-    </section>
+<h3>Ruta Dev 2026</h3>
+          <p>
+            Aquí te decimos qué aprender primero este año para que no pierdas el
+            tiempo.
+          </p>
+        </section>
 
         <section>
-        <h3>CSS de Impacto</h3>
+                 <div class="articulo-img">
+<img src="Pic/java.jpg" alt="imagen de java" />
+          </div>
 
-        <img src="Pic/css.jpg" alt="iamgen de css">
+          
+   <h3>Java Sin Miedo</h3>
 
-  <p>Dale color y estilo a tus páginas para que se vean increíbles y profesionales. Te enseñamos trucos fáciles para que tu diseño atrape a cualquier persona que lo vea.</p>
-
-    </section>
-
-        <section>
-        <h3>Git: El Comienzo</h3>
-        <img src="Pic/git_destacada.png" alt="imagen de git">
-
-  <p>Imagina que puedes guardar versiones de tu trabajo para nunca perder lo que has hecho. Te enseñamos a usar GitHub, la herramienta que todos los programadores usan.</p>
-
-    </section>
+          <p>
+            Mucha gente dice que Java es difícil, pero aquí te enseñamos que es muy ordenado. 
+          </p>
+        </section>
 
         <section>
-        <h3>Aprender Haciendo</h3>
-        <img src="Pic/aprender.jpg" alt="imagen aprender haciendo">
+                    <div class="articulo-img">
+<img src="Pic/html.jpg" alt="imagen de html" />
+          </div>
 
-  <p>La mejor forma de aprender programación no es leyendo libros, sino escribiendo código. Crear proyectos reales es el secreto para mejorar mucho más rápido.</p>
 
-    </section>
+          
+<h3>HTML Dinámico</h3>
+          <p>
+            Aprende a crear el esqueleto de cualquier sitio web de forma
+            sencilla y correcta.
+          </p>
+        </section>
 
-</main>
-<section>
-  <h2>Contacto</h2>
+        <section>
+                    <div class="articulo-img">
+<img src="Pic/css.jpg" alt="iamgen de css" />
+          </div>
 
-  <form action="">
-    <fieldset>
-      <legend>Contactános llenando todo los campos</legend>
 
-      <div>
-        <label for="">Nombre:</label>
-        <input type="text" placeholder="Tu nombre">
+          
+<h3>CSS de Impacto</h3>
+          <p>
+            Dale color y estilo a tus páginas para que se vean increíbles y
+            profesionales.
+          </p>
+        </section>
+
+        <section>
+                    <div class="articulo-img">
+<img src="Pic/git_destacada.png" alt="imagen de git" />
+          </div>
+
+          
+<h3>Git: El Comienzo</h3>
+          <p>
+            Imagina que puedes guardar versiones de tu trabajo para nunca perder
+            lo que has hecho.
+          </p>
+        </section>
+
+        <section>
+                    <div class="articulo-img">
+<img src="Pic/aprender.jpg" alt="imagen aprender haciendo" />
+          </div>
+
+          
+<h3>Aprender Haciendo</h3>
+          <p>
+            La mejor forma de aprender programación no es leyendo libros, sino
+            escribiendo código. 
+          </p>
+        </section>
       </div>
+    </main>
+    
+    <footer class="footer">
+      <p>
+        Todos los derechos reservados. Javier Bahena - contacto@email.com. The
+        site blog.
+      </p>
+    </footer>
 
-      <div>
-        <label for="">Teléfono:</label>
-        <input type="tel" placeholder="Tu teléfono">
-      </div>
-
-      <div>
-        <label for="">Correo Electrónico:</label>
-        <input type="email" placeholder="Tu correo favorito">
-      </div>
-
-      <div>
-              <label for="">Mensaje:</label>
-
-      <textarea name="" id=""></textarea>
-      </div>
-
-      <div>
-        <input type="submit" value="Enviar">
-      </div>
-
-
-
-      
-    </fieldset>
-  </form>
-</section>
-
-<footer>
-  <p>Todos los derechos reservados. Javier Bahena - contacto@email.com. The site blog.</p>
-
-</footer>
-  
-
-
-
-
-
-  <!--
+    <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
   page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
   teal, blue, blurple, magenta, pink!
   -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
-</body>
-
+    <script
+      src="https://replit.com/public/js/replit-badge-v2.js"
+      theme="dark"
+      position="bottom-right"
+    ></script>
+  </body>
 </html>
